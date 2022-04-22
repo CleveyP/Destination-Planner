@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cleveland Plonsey">
+    <title>Weather Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="header-overlay" style="background-color: gray; opacity: .5"></div>
+    <header>
+        <h1>Weather  _______     Finder</h1>
+    <p>Search cities to find  ______      the current weather!</p>
+    <p>  ______      </p>
+    <p>______      </p>
+    </header>
+    <main>
+        <div id="iframe-container">
+        <div id="form-container">
+        <label for="search-bar">Enter a city</label>
+        <div><input type="text" id="search-bar"></div>
+        <button id="search-button">Submit</button>
+    </div>
+    <iframe src="https://www.google.com/maps" frameborder="3"></iframe>
+        </div>
+        <div id="container">
+            <div id="location">
+                <h2></h2>
+            </div>
+            <div id="weather-content">
+                <h2 class="hidden" id="city-header"></h1>
+                <p class="hidden" id="temperature"></p>
+                <p class = "hidden" id="forecast"></p>
+            </div>
+            <div id="photos" class="grid">
+                <div class="photo"><img src="" alt=""></div>
+                <div class="photo"><img src="" alt=""></div>
+                <div class="photo"><img src="" alt=""></div>
+            </div>
+        </div>
+        <div id="venues">
+            <div id="venue-1" class="venue">
+                <h3 class="venue-name"></h3>
+                <p class="venue-address"></p>
+            </div>
+            <div class="venue" id="venue-2">
+                <h3 class="venue-name"></h3>
+                <p class="venue-address"></p>
+            </div>
+            <div class="venue" id="venue-3">
+                <h3 class="venue-name"></h3>
+                <p class="venue-address"></p>
+            </div>
+            <div class="venue" id ="venue-4">
+                <h3 class="venue-name"></h3>
+                <p class="venue-address"></p>
+            </div>
+            <div class="venue" id="venue-5">
+                <h3 class="venue-name"></h3>
+                <p class="venue-address"></p>
+            </div>
+            <div class="moves" id="moving-div"></div>
+
+        </div>
+    </main>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous" ></script>
+  <script src="javascript.js" defer></script>
+</html>
